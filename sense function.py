@@ -13,6 +13,8 @@ world=['green', 'red', 'red', 'green', 'green']
 Z = 'red'
 pHit = 0.6
 pMiss = 0.2
+
+#create empty list with n elements as p 
 q=[0]*len(p)
 
 #sense function
