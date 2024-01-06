@@ -1,7 +1,9 @@
-#Modify your code so that it normalizes the output for 
-#the function sense. This means that the entries in q 
-#should sum to one.
-
+#The function sense, takes p and Z as inputs, 
+#and outputs the NON-normalized 
+#probability distribution, q, after multiplying the entries 
+#in p by pHit or pMiss according to the color in the 
+#corresponding cell in world. Later again normalizes the output
+#thus the sum of q should be one.
 
 p=[0.2, 0.2, 0.2, 0.2, 0.2]
 world=['green', 'red', 'red', 'green', 'green']
