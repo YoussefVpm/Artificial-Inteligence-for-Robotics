@@ -11,12 +11,11 @@ pMiss = 0.2
 
 def sense(p, Z):
     q=[]
-    qN=[]
     for i in range(len(p)):
         hit = (Z == world[i])
         q.append(p[i] * (hit * pHit + (1-hit) * pMiss))
-        NormFactor=sum(q)
+    NormFactor=sum(q)
     for i in range(len(p)):
-        qN.append(q[i]/NormFactor)
-    return qN
+        q[i]=q[i]/NormFactor
+    return q
 print sense(p,Z)
